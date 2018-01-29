@@ -1,20 +1,32 @@
-<mat-list>
-  <mat-list-item *ngFor="let message of conversation">
-    <mat-icon>{{ message.avatar }}</mat-icon>
-    <h3 matLine> {{message.from}} </h3>
-    <p matLine>
-      <span> {{message.content}} </span>
-    </p>
-  </mat-list-item>
-</mat-list>
-<md-divider></md-divider>
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput 
-           #message 
-           maxlength="256" 
-           placeholder="Message" 
-           (keyup.enter)="addMessageFromUser(message)">
-    <mat-icon matSuffix (click)="addMessageFromUser(message)">send</mat-icon>
-  </mat-form-field>
-</form>
+<div class="wrapper">
+  <nav class="nav" id="nav">
+    <div class="default-nav">
+      <div class="main-nav">
+        <div class="toggle"></div>
+        <div class="main-nav-item"><a class="main-nav-item-link" href="#">Teradata</a></div>
+        <div class="options"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="inner" id="inner">
+    <mat-list>
+      <mat-list-item *ngFor="let message of conversation">
+        <mat-icon>{{ message.avatar }}</mat-icon>
+        <h3 matLine> {{message.from}} </h3>
+        <p matLine>
+          <span> {{message.content}} </span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div class="bottom" id="bottom">
+    <mat-form-field class="example-full-width">
+      <input matInput 
+             #message 
+             maxlength="256" 
+             placeholder="Message" 
+             (keyup.enter)="addMessageFromUser(message)">
+      <mat-icon matSuffix (click)="addMessageFromUser(message)">send</mat-icon>
+    </mat-form-field>
+  </div>
+</div>
