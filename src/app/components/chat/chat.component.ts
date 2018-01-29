@@ -6,7 +6,7 @@ import { IMessage } from './../../models/message';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']
+  styleUrls: ['./chat.component.css','./chat.component.scss']
 })
 export class ChatComponent {
 
