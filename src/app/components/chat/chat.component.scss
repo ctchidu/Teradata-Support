@@ -49,7 +49,6 @@ body {
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     //gotta hide windows scrollbars
-    
     &::-webkit-scrollbar {
       width: 0 !important
     }
@@ -60,7 +59,19 @@ body {
       margin-bottom: $navHeight/2;
     }
   }
-  
+
+  .chat-container{
+  height: 500px;
+  overflow: auto;
+  transform: rotate(180deg);
+  direction: rtl;
+  }
+  .message{
+    border-bottom: solid 1px #ccc;
+    padding: 20px;
+    transform: rotate(180deg);
+    direction: ltr;
+  }
   transition: $trans;
 }
 
@@ -103,7 +114,7 @@ body {
       .toggle {
         height: 32px;
         width: 32px;
-        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_arrow_back_white_48dp.png);
+        background: url(https://powerbicdn.azureedge.net/cvt-20ddf70fdc8a7c7696e6a3d80074c0387b381bf9040dd5f27584bace55f3b667/pictures/shared/integrations/2x/teradata@2x.png);
         background-size: contain;
         margin: 16px;
         float: left;
